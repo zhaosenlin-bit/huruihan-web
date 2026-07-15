@@ -1,0 +1,7 @@
+name = "huruihan-web"
+main = "cloudflare-worker.js"
+compatibility_date = "2025-07-15"
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"

@@ -1,0 +1,53 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Cloudflare / Wrangler
+.wrangler/
+
+# Vite dev/build logs
+_vite-dev.err.log
+_vite-dev.out.log
+_dev.log
+_dev_err.log
+vite-stderr.log
+vite-stdout.log
+
+# Temporary scrape / probe artifacts
+b64tmp.txt
+probe.txt
+probe2.json
+probe_out.json
+peek.py
+scrap_cards.py
+scrap_details.py
+scrap_links.py
+scrap_probe2.py
+scrap_save_home.py
+scrapling_probe.py
+scraped/
+
+# External repos pulled in for reference
+Scrapling-main/
+andrej-karpathy-skills-main/
