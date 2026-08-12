@@ -20,17 +20,32 @@ export default function Contact() {
             {contact.intro}
           </p>
           <ul className="space-y-4">
-            {contact.methods.map((m, i) => (
-              <li
-                key={i}
-                className="text-text-muted text-base leading-relaxed flex gap-3 group"
-              >
-                <span className="font-serif italic text-accent/70 group-hover:text-accent shrink-0 transition-colors">
-                  ·
-                </span>
-                <span>{m}</span>
-              </li>
-            ))}
+            {contact.methods.map((m, i) => {
+              const url = /(https?:\/\/[^\s]+)/.exec(m)?.[1];
+              const label = url ? m.replace(url, "").trim().replace(/[:。]$/, "") : m;
+              return (
+                <li
+                  key={i}
+                  className="text-text-muted text-base leading-relaxed flex gap-3 group"
+                >
+                  <span className="font-serif italic text-accent/70 group-hover:text-accent shrink-0 transition-colors">
+                    ·
+                  </span>
+                  {url ? (
+                    <a
+                      href={url}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="underline decoration-text-subtle/40 hover:decoration-accent hover:text-text underline-offset-4 transition-colors break-all"
+                    >
+                      {label}
+                    </a>
+                  ) : (
+                    <span>{m}</span>
+                  )}
+                </li>
+              );
+            })}
           </ul>
         </div>
 

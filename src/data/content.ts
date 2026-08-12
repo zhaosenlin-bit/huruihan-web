@@ -280,5 +280,7 @@ export const contact = {
     "想认识我，看作品比语言更直接 — 探索宇宙 / 三国 / 个人站",
     "想聊班课 / 项目合作，找我的老师（森林 · senlin-c1n.pages.dev）",
     "想看更多日常，看我的探索宇宙项目：huruihan-web.pages.dev",
+    "GitHub 主胡睿涵 (3D 站)：https://github.com/huruihan",
+    "GitHub 2D 站仓库：https://github.com/huruihan_wed/huruihan-web",
   ],
 };
