@@ -1,9 +1,25 @@
+﻿# dependencies
 node_modules/
+
+# build output
 .next/
 out/
+dist/
+
+# env / logs / caches
 .env*
-.DS_Store
 *.log
 .vercel
 tsconfig.tsbuildinfo
 *.tsbuildinfo
+
+# system
+.DS_Store
+
+# local dev artifacts
+_preview_3d.*
+ballpit-dom2.html
+edge-profile/
+
+# nested reference repo (the senlin-cartoon 3D version, kept on disk only)
+reference_repo/
