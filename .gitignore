@@ -23,3 +23,6 @@ edge-profile/
 
 # nested reference repo (the senlin-cartoon 3D version, kept on disk only)
 reference_repo/
+dev.log
+dev.err.log
+contact-after.png
